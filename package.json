@@ -1,0 +1,58 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "application",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duck8823/semantic-ui-react-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "events": "^1.1.1",
+    "flux": "^2.1.1",
+    "jquery": "^3.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "sanitize.css": "^4.0.0",
+    "semantic-ui-css": "^2.1.8",
+    "semantic-ui-dimmer": "^2.1.7",
+    "semantic-ui-modal": "^2.1.7",
+    "semantic-ui-transition": "^2.1.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-espower": "^2.3.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "isparta-loader": "^2.0.0",
+    "karma": "^1.1.0",
+    "karma-coverage": "^1.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.0.4",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-phantomjs-shim": "^1.4.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.3",
+    "phantomjs": "^2.1.7",
+    "react-addons-test-utils": "^15.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  },
+  "bugs": {
+    "url": "https://github.com/duck8823/semantic-ui-react-components/issues"
+  },
+  "homepage": "https://github.com/duck8823/semantic-ui-react-components#readme",
+  "license": "MIT"
+}
