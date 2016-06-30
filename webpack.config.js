@@ -4,11 +4,6 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-	resolve: {
-		alias : {
-			semantic : 'semantic-ui-css/semantic'
-		}
-	},
 	entry: {
 		bundle: './path/to/src/entry.js'
 	},
@@ -17,11 +12,6 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	plugins: [
-		new webpack.ProvidePlugin({
-			$: "jquery",
-			jQuery: "jquery",
-			"windows.jQuery" : "jquery"
-		}),
 		new ExtractTextPlugin('bundle.css')
 	],
 	module : {
@@ -36,32 +26,8 @@ module.exports = {
 				loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
 			},
 			{
-				test : /\.svg$/,
-				loader: 'url?mimetype=image/svg+xml'
-			},
-			{
-				test : /\.woff$/,
-				loader: 'url?mimetype=application/font-woff'
-			},
-			{
-				test : /\.woff2$/,
-				loader: 'url?mimetype=application/font-woff'
-			},
-			{
-				test : /\.eot$/,
-				loader: 'url?mimetype=application/font-woff'
-			},
-			{
-				test : /\.ttf$/,
-				loader: 'url?mimetype=application/font-woff'
-			},
-			{
-				test : /\.png$/,
-				loader: 'url?mimetype=image/png!file?name=images/[name].[ext]'
-			},
-			{
-				test : /\.gif$/,
-				loader: 'url?mimetype=image/gif!file?name=images/[name].[ext]'
+				test : /\.(svg|woff2?|eot|ttf|png|gif)$/,
+				loader: 'url'
 			}
 		]
 	}

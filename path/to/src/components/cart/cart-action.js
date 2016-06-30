@@ -1,4 +1,4 @@
-import AppDispatcher from "../../dispatcher/app-dispatcher";
+import AppDispatcher from "../../app-dispatcher";
 import {Constants} from "./constants";
 
 /**

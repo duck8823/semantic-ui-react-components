@@ -1,5 +1,5 @@
 import EventEmitter from 'events';
-import AppDispatcher from '../../dispatcher/app-dispatcher';
+import AppDispatcher from '../../app-dispatcher';
 import {Constants} from './constants';
 
 const CONSTANTS = {
